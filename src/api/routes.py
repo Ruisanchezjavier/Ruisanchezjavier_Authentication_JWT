@@ -43,4 +43,7 @@ def generate_token():
         ), 401
     
     access_token = create_access_token(identity=email)
-    return jsonify(access_token=access_token)
+    return jsonify(access_token=access_token), 200
+
+
+
